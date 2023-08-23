@@ -12,7 +12,7 @@ const NavList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  font-family: "Special Elite";
+  font-family: "Inter";
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -71,7 +71,7 @@ function MainNav() {
           </StyledNavLink>
         </li>
         <li>
-          <StyledNavLink to="/cabins">
+          <StyledNavLink to="/rooms">
             <HiBuildingOffice />
             <span>Rooms</span>
           </StyledNavLink>

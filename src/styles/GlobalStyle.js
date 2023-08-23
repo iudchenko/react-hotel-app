@@ -187,7 +187,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
-  font-family: "Special Elite";
+  font-family: "Inter";
 }
 
 img {

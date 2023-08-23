@@ -45,7 +45,7 @@ const Header = styled.header`
   }
 
   & span {
-    font-family: "Special Elite";
+    font-family: "Inter";
     font-size: 2rem;
     margin-left: 4px;
   }
