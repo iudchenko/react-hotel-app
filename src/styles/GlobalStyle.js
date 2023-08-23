@@ -82,15 +82,24 @@ const GlobalStyles = createGlobalStyle`
   --image-opacity: 90%;
   }
 
-  /* Indigo */
-  --color-brand-50: #eef2ff;
+  /* Violet */
+  --color-brand-50: #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+
+  /* --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
   --color-brand-500: #6366f1;
   --color-brand-600: #4f46e5;
   --color-brand-700: #4338ca;
   --color-brand-800: #3730a3;
-  --color-brand-900: #312e81;
+  --color-brand-900: #312e81; */
 
 
   --border-radius-tiny: 3px;
@@ -116,7 +125,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: var(--color-grey-700);
 
   transition: color 0.3s, background-color 0.3s;
@@ -178,6 +187,7 @@ h5,
 h6 {
   overflow-wrap: break-word;
   hyphens: auto;
+  font-family: "Special Elite";
 }
 
 img {
