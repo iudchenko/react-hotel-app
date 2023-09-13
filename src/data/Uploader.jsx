@@ -95,6 +95,9 @@ async function createBookings() {
   });
 
   console.log(finalBookings);
+  setTimeout(() => {
+    window.location.reload();
+  }, 1000);
 
   const { error } = await supabase.from("bookings").insert(finalBookings);
   if (error) console.log(error.message);

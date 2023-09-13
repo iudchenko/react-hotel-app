@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
@@ -14,6 +15,11 @@ const Main = styled.main`
   background-color: var(--color-grey-50);
   padding: 4rem 4.8rem 6.4rem;
   overflow: scroll;
+  @media (max-width: 800px) {
+    grid-column: 1 / -1;
+    overflow: visible;
+    padding: 2rem;
+  }
 `;
 
 const Container = styled.div`
@@ -25,10 +31,18 @@ const Container = styled.div`
 `;
 
 function AppLayout() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <StyledAppLayout>
-      <Header />
-      <Sidebar />
+      <Header
+        sidebar={sidebarOpen}
+        onToggle={() => setSidebarOpen((prev) => !prev)}
+      />
+      <Sidebar
+        sidebar={sidebarOpen}
+        onToggle={() => setSidebarOpen((prev) => !prev)}
+      />
       <Main>
         <Container>
           <Outlet />
