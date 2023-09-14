@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import MainNav from "./MainNav";
 import Uploader from "../data/Uploader";
 import { HiXMark } from "react-icons/hi2";
+import ButtonIcon from "./ButtonIcon";
 
 const StyledSidebar = styled.aside`
   color: #000000;
@@ -31,7 +32,7 @@ const StyledIconDiv = styled.div`
     display: block;
     position: absolute;
     top: 1em;
-    left: 2em;
+    left: 3em;
   }
   & svg {
     cursor: pointer;
@@ -44,7 +45,9 @@ function Sidebar({ sidebar, onToggle }) {
   return (
     <StyledSidebar sidebar={sidebar ? 1 : 0}>
       <StyledIconDiv>
-        <HiXMark onClick={() => onToggle()} size={32} />
+        <ButtonIcon onClick={() => onToggle()}>
+          <HiXMark size={32} />
+        </ButtonIcon>
       </StyledIconDiv>
 
       <Logo />
